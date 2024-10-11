@@ -1,0 +1,32 @@
+div {
+    border: 2px black solid;
+}
+#jigga {
+    background-color: darkred;
+    padding: 50px ;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#jigga2 {
+    background-color: olivedrab;
+    padding: 40px ;
+}
+#jigga3 {
+    background-color: darkgreen;
+    padding: 30px ;
+}
+#zigga {
+    background-color: red;
+    padding: 20px ;
+}
+#wigga {
+    background-color: darkblue;
+    padding: 10px ;
+}
+
+main {
+    margin-left: 600px;
+}
