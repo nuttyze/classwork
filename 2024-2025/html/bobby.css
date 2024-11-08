@@ -1,0 +1,14 @@
+#bob {
+    border: 3px solid black;
+    background-color: lightpink;
+}
+
+legend {
+    border: 3px solid black;
+    border-color: black;
+    background-color: lightpink;
+}
+#rob {
+    border: 3px solid lightblue;
+    background-color: lightgreen;
+}
