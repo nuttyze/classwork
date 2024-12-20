@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" herf="Standards.2.css">
+    <script>
+        document.addEventListener("DOMContentLoaded",(ev)=>{
+            console.log("page loaded")
+            const save_button = document.getElementById("saveBtn");
+            console.log(save_button);
+
+            const set_button = document.getElementById("setBtn");
+            console.log(set_button);
+
+            const students=['rat','pig','berger'];
+            for (let index=1;index <students; index ++){
+                console.log('name is : '+ students [index]);
+            }
+
+
+            const number=['rat','pig','berger'];
+            for (let index=1;index <12; index ++){
+                console.log('number is : '+ students [index]);
+        })
+
+    </script>
+
+
     <title>Title</title>
 </head>
 <body>
