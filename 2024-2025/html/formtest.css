@@ -1,0 +1,14 @@
+fieldset {
+    margin: 30px 0px;
+}
+
+fieldset {
+    background-color: lightcoral;
+}
+legend {
+    background-color: lightblue;
+}
+
+legend {
+    border: 2px lightpink solid;
+}
