@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", (evt)=>{
+
+        const age = document.getElementById("UserAge")
+        const checkage = document.getElementById("check")
+        const output =document.getElementById("output")
+
+        checkage.addEventListener("click",(evt)=>{
+            let differnce = 21 - Number.parseInt(age.value)
+            output.textContent = "you have " + differnce.toString() + " until 21"
+        })
+    })
+
+
+
+</script>
+<body>
+<header>
+
+</header>
+<main>
+    <label for="UserAge">first name</label>
+    <input type="text" id="UserAge" name="Ag1">
+    <button id="check">check age</button>
+    <p id="output"></p>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
