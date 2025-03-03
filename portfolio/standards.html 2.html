@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" herf="Standards.2.css">
     <script>
-        document.addEventListener("DOMContentLoaded",(ev)=>{
-            console.log("page loaded")
-            const save_button = document.getElementById("saveBtn");
-            console.log(save_button);
+        document.addEventListener("DOMContentLoaded",(event)=>{
+            const buttonsave = document.getElementById("buttonsave")
+            console.log(buttonsave)
+            let checkedInputs = [];
+            const output = document.getElementById("output")
 
-            const set_button = document.getElementById("setBtn");
-            console.log(set_button);
+        buttonsave.addEventListener("click" ,(event)=>{
+            checkedInputs = [];
+            const inputs = Array.from(document.getElementsByTagName('input'))
+            inputs.forEach((element)=>{
+                if(element.checked) {
+                    let checked = {}
+                    checked["id"] = element.id
+                    console.log(checked)
+                    checkedInputs.push(checked)
+                }
 
-            const students=['rat','pig','berger'];
-            for (let index=1;index <students; index ++){
-                console.log('name is : '+ students [index]);
-            }
+            })
+            output.textContent = JSON.stringify(checkedInputs)
 
-
-            const number=['rat','pig','berger'];
-            for (let index=1;index <12; index ++){
-                console.log('number is : '+ students [index]);
         })
-
+    })
     </script>
 
 
@@ -137,6 +140,7 @@
 <input type="radio" id="2IP" name="2I" value="Proficientd">
 <label for="2IA">Advanced</label>
 <input type="radio" id="2IA" name="2I" value="Advanced">
-
+<button type="submit" id="buttonsave">save</button>
+<p id="output"></p>
 </body>
 </html>
