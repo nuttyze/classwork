@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", (evt)=>{
+      let name = document.getElementById("Name")
+      const output = document.getElementById("output")
+      const submit = document.getElementById("submit")
+
+      submit.addEventListener("click",(event)=>{
+          const rat = " hi, " +  name.value  + ", type stuff?"
+        output.textContent = rat
+        console.log(rat)
+      })
+
+    })
+
+  </script>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+  <p>Please input your first name</p>
+  <input type="text" id="Name">
+  <label for="Name"></label><br>
+  <button id="submit" type="submit">submit</button>
+  <p id="output">output</p>
+</main>
+</body>
+</html>
