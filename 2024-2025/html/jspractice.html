@@ -5,15 +5,15 @@
     <title>Title</title>
   <script>
     document.addEventListener("DOMContentLoaded", (evt)=>{
-      let name = document.getElementById("Name")
+      let name = document.getElementById("Name")  // { getelementbyid returns an element with a name value.
       const output = document.getElementById("output")
       const submit = document.getElementById("submit")
 
-      submit.addEventListener("click",(event)=>{
+      submit.addEventListener("click",(event)=>{ // what is does is that it attaches and event handler to the specified element.
           const rat = " hi, " +  name.value  + ", type stuff?"
         output.textContent = rat
-        console.log(rat)
-      })
+        console.log(rat) // console loging rst
+      }) // this is where the event listener ends.
 
     })
 
