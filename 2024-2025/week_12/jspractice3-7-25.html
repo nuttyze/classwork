@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    document.addEventListener("DOMContentLoaded",(event)=>{
+      const temp = document.getElementById("temp")
+      const convert = document.getElementById("convert")
+      const output = document.getElementById("output")
+
+      convert.addEventListener("click",(event)=>{
+        const pic = Number.parseFloat(temp.value)
+        let ts = (pic - 32) * 5/9
+        output.textContent = ts
+        console.log(ts)
+      })
+
+    })
+
+  </script>
+</head>
+<body>
+<header>
+  <h1>Temperature Converter</h1>
+</header>
+<main>
+
+  <label for="temp">Please enter a temperature in Fahrenheit to convert</label>
+  <input id="temp" type="text">
+  <button id="convert" type="submit">convert</button>
+  <h2 id="output"></h2>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
