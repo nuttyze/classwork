@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            const UserAge = document.getElementById("UserAge")
+            const AgeCheck = document.getElementById("CheckAge")
+            const messageOutput = document.getElementById("messageOutput")
+
+            AgeCheck.addEventListener("click", (event) => {
+                let age_input = parseInt(AgeInput.value)
+                if (age_input < 14) {
+                    messageOutput.textContent = " your to young for high school.";
+                } else if (age < 16) {
+                    messageOutput.textContent = " your in high school but still young "
+                } else if (age >= 18) {
+                    messageOutput.textContent = "your a legally an adult but still a teen"
+                } else if ( age >= 19) {
+                    messageOutput.textContent = "get a job big bro"
+                } else {
+                    messageOutput.textContent = "live your life biggest bro"
+                }
+                console.log(age_input)
+
+            })
+        })
+    </script>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <label for="UserAge"></label>
+    <input type="text" id="UserAge">
+    <button id="CheckAge">Check Age</button>
+    <h2 id="output"></h2>
+</main>
+<footer>
+    lebron is my king
+</footer>
+</body>
+</html>
