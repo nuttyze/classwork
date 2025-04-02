@@ -6,18 +6,37 @@
     <title>Title</title>
     <script>
     document.addEventListener("DOMContentLoaded", (evt) =>{
-       const c1
-        const
 
+        const btncon = document.getElementById("Container")
+
+        const Toprow = []
+        const Middlerow = []
+        const Bottonrow = []
+        const Leftcol = []
+        const Middlecol = []
+        const Rightcol = []
+        const Damright = []
+        const Damleft = []
+        let X = "X"
+
+        btncon.addEventListener("click",(ev)=>{
+            ev.target.textContent= X
+
+            if (X == "X"){
+                X = "O"
+            } else {
+                X = "X"
+            }
+        })
     })
     </script>
 </head>
 <body>
 <header>
-<h1>tik tak</h1>
+
 </header>
 <main>
-    <div id="low">
+    <div id="Container">
         <button id="fat1">1</button>
         <button id="fat2">2</button>
         <button id="fat3">3</button><br>
