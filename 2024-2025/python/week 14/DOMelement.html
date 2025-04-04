@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<header></header>
+<main>
+  <h2>JavaScript HTML DOM</h2>
+  <p>him</p>
+
+  <div id="div1">
+    <p id="d1">div 1</p>
+    <p id="d2">div 2</p>
+  </div>
+
+  <script>
+    const para = document.createElement("p")
+    const text = document.createTextNode("im him")
+
+    para.appendChild(text)
+    const element = document.getElementById("div1")
+    element.appendChild(para);
+
+    const ol = document.createElement("ol")
+    const fish = document.createElement("li")
+    const fish2 = document.createElement("li")
+    const fish3 = document.createElement("li")
+
+    ol.appendChild(fish)
+    ol.appendChild(fish2)
+    ol.appendChild(fish3)
+    body.append(ol)
+  </script>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
